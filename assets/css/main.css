@@ -37,16 +37,16 @@ nav .nav-link:hover i {
 }
 
 section.contact {
-  border: 2px solid gold;
   overflow: hidden;
   border-radius: 30px;
   width: 50px;
   height: 50px;
   background-color: whitesmoke;
   position: fixed;
-  bottom: 30px;
+  bottom: 75px;
   left: 30px;
   transition: 0.7s cubic-bezier(0.07, 1.09, 0.56, 1.22);
+  box-shadow: 0px 0px 3px 0px rgba(32, 32, 32, 0.411);
   z-index: 1000;
 }
 
@@ -77,6 +77,7 @@ section.contact .desc a {
 section.contact:hover {
   background-color: #ffd700;
   width: 160px;
+  box-shadow: 0px 0px 3px 0px rgba(32, 32, 32, 0.336);
 }
 
 section.contact:hover .icon {
@@ -157,24 +158,15 @@ section.intro .container .card .card-body .container-btn .btn {
 }
 
 section.services {
-  padding: 0 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-section.services .container-fluid {
   width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  padding: 100px 20px;
+  padding: 100px 0px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background-image: url(/assets/img/pexels-jan-karan-4572176.jpg);
+  background-image: url();
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -182,96 +174,68 @@ section.services .container-fluid {
   position: relative;
 }
 
-section.services .container-fluid::after {
+section.services::after {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 217, 0, 0.6235294118);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgb(32, 32, 32));
   position: absolute;
   left: 0;
   right: 0;
 }
 
-section.services .title {
-  width: 45%;
+section.services .container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 5;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: rgba(255, 217, 0, 0.2666666667);
+  padding: 10px;
 }
 
-section.services .title h1 {
+section.services .container .title {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  background-color: aliceblue;
-  display: flex;
-  font-weight: 700;
-  font-size: 50px;
-  padding: 10px;
-  box-shadow: -4px 25px 0px 11px rgb(32, 32, 32);
+  align-self: flex-end;
+  z-index: 5;
+  position: relative;
 }
 
-section.services .title p {
-  font-weight: 600;
-  color: gold;
+section.services .container .title::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  border-bottom: 3px solid gold;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+section.services .container .title h1 {
+  color: rgb(32, 32, 32);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  font-weight: 700;
+}
+
+section.services .container-card {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100px;
 }
 
 section.services .card {
-  width: 45%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  display: flex;
-  z-index: 5;
-  flex-direction: row;
-  overflow: hidden;
-  border: 0;
-  border-radius: 5px;
-  margin: 50px 0;
-  background-color: rgb(32, 32, 32);
-  border-radius: 0px 4px 4px 0px;
-  box-shadow: 0px 0px 0px 20px rgb(32, 32, 32);
-}
-
-section.services .card:nth-child(even) {
-  border-radius: 4px 0px 0px 4px;
-}
-
-section.services .card-img {
-  width: 50%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  background-color: #ffd700;
-}
-
-section.services .card-img img {
-  width: 100%;
-}
-
-section.services .card .card-desc {
+  width: 193px;
+  padding: 20px;
   background-color: whitesmoke;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  border-radius: 5px 0px 0px 5px;
-}
-
-section.services .card .card-desc a {
-  text-decoration: none;
-  color: rgb(32, 32, 32);
-}
-
-section.services .card .card-desc a:hover {
-  color: rgb(65, 65, 250);
-}
-
-section.services .card:nth-child(even) .card-desc {
-  border-radius: 0px 5px 5px 0px;
 }
 
 section.project {
@@ -495,8 +459,6 @@ footer .container .footer-spec {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
   width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -558,8 +520,20 @@ footer .container .container-icon a:hover {
 }
 footer .container .desc p {
   color: whitesmoke;
+  text-align: center;
 }
 
+@media (max-width: 575.98px) {
+  footer .container .footer-spec {
+    flex-wrap: wrap;
+  }
+  footer .container .footer-spec div {
+    border: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 10px 15px 0;
+  }
+}
 * {
   padding: 0;
   margin: 0;
