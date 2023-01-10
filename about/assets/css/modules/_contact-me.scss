@@ -1,0 +1,176 @@
+/* contact me */
+section.contact-me {
+  background-color: gold;
+  width: 100%;
+  height: max-content;
+  display: flex;
+}
+
+section.contact-me .container-card {
+  width: 90%;
+  border-radius: 0px 10px 0px 0px;
+  background-color: rgb(32, 32, 32);
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  justify-content: center;
+  padding: 50px 20px;
+  box-shadow: 0px 0px 8px -1px rgba(8, 8, 8, 0.651);
+}
+
+section.contact-me .title {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.contact-me .card-email {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.contact-me .title {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+
+}
+
+section.contact-me .card-email .card {
+  width: 80%;
+  height: max-content;
+  padding: 30px;
+}
+
+section.contact-me form div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+section.contact-me form input,
+textarea {
+  border-radius: 5px;
+  border: 2px solid rgb(32, 32, 32);
+  min-height: 25px;
+
+}
+
+section.contact-me form button {
+  width: 50%;
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: rgb(49, 49, 255);
+  color: whitesmoke;
+}
+
+
+/* =================== RESPONSIVE BREAKPOINTS ====================== */
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  section.contact-me {
+    display: flex;
+
+    .container-card {
+      width: 98%;
+      flex-direction: column;
+      padding: 25px 15px;
+
+
+      .title {
+        width: 100%;
+
+        p {
+          margin: 0;
+        }
+
+        h1 {
+          font-size: 20px;
+
+          br {
+            display: none;
+          }
+        }
+      }
+
+      .card-email {
+        width: 100%;
+
+        .card {
+          min-width: 300px;
+          max-width: 500px;
+          background-color: whitesmoke;
+
+          form {
+            h3 {
+              font-size: 16px;
+            }
+
+            div {
+              font-size: 14px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  section.contact-me {
+    display: flex;
+
+    .container-card {
+      width: 98%;
+      flex-direction: column;
+      padding: 25px 15px;
+
+
+      .title {
+        width: 100%;
+
+        p {
+          margin: 0;
+        }
+
+        h1 {
+          font-size: 23px;
+
+          br {
+            display: none;
+          }
+        }
+      }
+
+      .card-email {
+        width: 100%;
+
+        .card {
+          min-width: 300px;
+          max-width: 400px;
+          background-color: whitesmoke;
+
+          form {
+            h3 {
+              font-size: 18px;
+            }
+
+            div {
+              font-size: 16px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+section.contact {
+  border: 2px solid gold;
+  overflow: hidden;
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: whitesmoke;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  transition: .7s cubic-bezier(00.07, 1.09, 0.56, 1.22);
+  z-index: 1000;
+}
+
+section.contact .icon {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+section.contact .icon i {
+  display: block;
+  color: rgb(32, 32, 32);
+  font-size: 30px;
+  text-align: center;
+  line-height: 50px;
+}
+
+section.contact .desc {
+  float: left;
+  height: 100%;
+  width: 75%;
+}
+
+section.contact .desc a {
+  display: none;
+}
+
+section.contact:hover {
+  background-color: #ffd700;
+  width: 160px;
+}
+
+section.contact:hover .icon {
+  width: 25%;
+}
+
+section.contact:hover .desc a {
+  box-sizing: border-box;
+  color: rgb(32, 32, 32);
+  display: block;
+  line-height: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+}

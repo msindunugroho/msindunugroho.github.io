@@ -1,0 +1,213 @@
+/* education & experiences */
+section.exp {
+  background-color: #ffd700;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-height: max-content;
+  padding: 30px 0;
+}
+
+section.exp .container {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 100px 0;
+}
+
+section.exp .card {
+  width: 45%;
+  height: max-content;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0px 0px 8px -1px rgba(8, 8, 8, 0.651);
+}
+
+section.exp .title {
+  width: 100%;
+  height: max-content;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 5px;
+  /* background-color:rgba(32, 32, 32, 0.685); */
+  color: rgb(32, 32, 32);
+}
+
+section.exp .container-desc {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+section.exp .desc-item {
+  width: 100%;
+  height: max-content;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  overflow: hidden;
+  transition: .3s cubic-bezier(0.38, 0.68, 0.55, 0.87);
+  text-transform: capitalize;
+}
+
+section.exp .desc-item:hover {
+  box-shadow: 0px 0px 8px -1px rgba(8, 8, 8, 0.651);
+
+}
+
+section.exp .desc-img {
+  box-sizing: border-box;
+  width: 10%;
+  height: fit-content;
+  overflow: hidden;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+section.exp .desc-img img {
+  width: 100%;
+}
+
+section.exp .container-desc .desc {
+  width: 85%;
+  height: max-content;
+}
+section.exp .desc ul li{
+  padding: 2px 0;
+}
+section.exp .desc ul li a{
+  color: black;
+  text-decoration: none;
+}
+section.exp .desc ul li a:hover{
+  color: rgb(78, 78, 255);
+}
+
+
+/* =================== RESPONSIVE BREAKPOINTS ====================== */
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  section.exp {
+    height: max-content;
+
+    .container {
+      flex-direction: column;
+      padding: 25px 10px;
+      justify-content: center;
+      align-items: center;
+
+      .card.edct,
+      .card.exp {
+        width: 90%;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+
+        .title {
+
+          h2 {
+            font-size: 20px;
+          }
+        }
+
+        .container-desc {
+
+          .desc-item {
+
+            .desc {
+
+              h4 {
+                font-size: 16px;
+              }
+
+              ul {
+
+                li {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  section.exp {
+    height: max-content;
+
+    .container {
+      flex-direction: column;
+      padding: 25px 10px;
+      justify-content: center;
+      align-items: center;
+
+      .card.edct,
+      .card.exp {
+        width: 80%;
+        margin-bottom: 15px;
+
+        .title {
+
+          h2 {
+            font-size: 24px;
+          }
+        }
+
+        .container-desc {
+
+          .desc-item {
+
+            .desc {
+
+              h4 {
+                font-size: 18px;
+              }
+
+              ul {
+
+                li {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+// @media (max-width: 991.98px) {
+//   section.exp {
+//     height: max-content;
+
+//     .container {
+//       flex-direction: column;
+//       padding: 25px 10px;
+//       justify-content: center;
+//       align-items: center;
+
+//       .card.edct,
+//       .card.exp {
+//         max-width: 480px;
+//         margin-bottom: 15px;
+//       }
+//     }
+//   }
+// }

@@ -1,0 +1,35 @@
+nav {
+    background-color: rgb(32, 32, 32);
+    width: 100%;
+  }
+  nav .container-fluid button{
+    background-color: #ffd700;
+  }
+  nav .nav-link {
+    color: gold;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .3s cubic-bezier(0.4, 0.82, 0.32, 0.96);
+  }
+  
+  nav .nav-link.on {
+    color: whitesmoke;
+  }
+  
+  nav .nav-link.on i {
+    color: gold;
+  }
+  
+  nav .nav-link i {
+    color: rgba(0, 0, 0, 0);
+    transition: .3s cubic-bezier(0.4, 0.82, 0.32, 0.96);
+  }
+  
+  nav .nav-link:hover {
+    color: whitesmoke;
+  }
+  
+  nav .nav-link:hover i {
+    color: #ffd700;
+    transition: .3s cubic-bezier(0.27, 0.74, 0.45, 0.9);
+  }

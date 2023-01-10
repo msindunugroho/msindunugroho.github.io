@@ -1,0 +1,78 @@
+@use '../../../assets/css/modules/navbar';
+@use '../../../assets/css/modules/contact';
+@use 'modules/about-me';
+@use 'modules/exp';
+@use 'modules/contact-me';
+@use '../../../assets/css/modules/footer';
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgb(32, 32, 32);
+    // border: 1px solid red; 
+  }
+  
+  /* TOOLS*/
+  .gold-text {
+    color: gold;
+  }
+  
+  .white-text {
+    color: whitesmoke;
+  }
+
+  span.certified{
+    color: rgb(0, 187, 0);
+    border: 1.5px solid rgb(0, 187, 0);
+    padding: 0px 3px 1px 3px;
+    border-radius: 15px;
+  }
+  
+  
+  .btn {
+    background-color: gold;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(32, 32, 32);
+    text-decoration: none;
+    border-radius: 10px;
+    transition: .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  
+  .btn.dark-bg {
+    background-color: rgb(32, 32, 32);
+    color: whitesmoke;
+    border: 1px solid gold;
+  }
+  
+  .btn:hover {
+    background-color: rgb(32, 32, 32);
+    border: 1px solid gold;
+    color: whitesmoke;
+  }
+  
+  
+  
+  /* =================== RESPONSIVE BREAKPOINTS ====================== */
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+// @media (max-width: 575.98px) { ... }
+
+// `md` applies to small devices (landscape phones, less than 768px)
+// @media (max-width: 767.98px) { ... }
+
+// `lg` applies to medium devices (tablets, less than 992px)
+// @media (max-width: 991.98px) { ... }
+
+// `xl` applies to large devices (desktops, less than 1200px)
+// @media (max-width: 1199.98px) { ... }
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+// @media (max-width: 1399.98px) { ... }
+ 
