@@ -209,7 +209,7 @@ section.services .container .title {
   height: -moz-max-content;
   height: max-content;
   z-index: 5;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   position: relative;
 }
 
