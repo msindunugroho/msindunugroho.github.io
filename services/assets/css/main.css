@@ -234,7 +234,7 @@ section.certification .container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding: 90px 0;
 }
 section.certification .container .title {
   width: -webkit-max-content;
