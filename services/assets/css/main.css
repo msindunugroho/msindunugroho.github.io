@@ -44,7 +44,7 @@ section.contact {
   background-color: whitesmoke;
   position: fixed;
   bottom: 75px;
-  left: 10px;
+  left: 20px;
   transition: 0.7s cubic-bezier(0.07, 1.09, 0.56, 1.22);
   box-shadow: 0px 0px 3px 0px rgba(32, 32, 32, 0.411);
   z-index: 1000;
