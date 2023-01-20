@@ -1,0 +1,76 @@
+section.publication {
+  width: 100%;
+  height: 100vh;
+  padding: 100px 0;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .title{
+      width: max-content;
+      height: max-content;
+      margin-bottom: 100px;
+      color: whitesmoke;
+      position: relative;
+    }
+    .title::before{
+      content: "";
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      border-bottom: 3px solid gold;
+    }
+
+    a{
+      color: rgb(32, 32, 32);
+      text-decoration: none;
+
+      .card{
+        width: 600px;
+        max-height: 231px;
+        background-color: gold;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        border: 0;
+        
+  
+        .card-img{
+          width: 30%;
+          height: max-content;
+          overflow: hidden;
+  
+          img{
+            width: 100%;
+            // border: .5px solid black;
+            border-radius: 7px;
+            transition: .3s cubic-bezier(0.3, 0.82, 0.4, 1.01);
+          }
+        }
+        .card-desc{
+          width: 70%;
+          margin-left: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+         
+          h5{
+            text-transform: capitalize;
+          }
+        }
+      }
+      .card:hover{
+        img{
+          transform: scale(1.2);
+          filter: blur(1px);
+        }
+
+      }
+    }
+  }
+}
