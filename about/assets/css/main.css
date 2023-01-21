@@ -359,7 +359,7 @@ section.exp .desc-item {
   margin-bottom: 10px;
   border-radius: 7px;
   overflow: hidden;
-  transition: 0.3s cubic-bezier(0.38, 0.68, 0.55, 0.87);
+  transition: 0.2s cubic-bezier(0.38, 0.68, 0.55, 0.87);
   text-transform: capitalize;
 }
 
@@ -641,7 +641,7 @@ footer .container {
 footer .container .footer-spec {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;

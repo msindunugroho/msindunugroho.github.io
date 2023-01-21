@@ -112,7 +112,7 @@ footer .container {
 footer .container .footer-spec {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -254,11 +254,57 @@ section.publication .container a .card .card-desc {
 section.publication .container a .card .card-desc h5 {
   text-transform: capitalize;
 }
+section.publication .container a .card .card-desc h5 span.dots {
+  display: none;
+}
 section.publication .container a .card:hover img {
   transform: scale(1.2);
   filter: blur(1px);
 }
 
+/* ======================== RESPONSIVE ====================== */
+@media (max-width: 575.98px) {
+  section.publication .container a .card {
+    padding: 5px;
+  }
+  section.publication .container a .card .card-img {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section.publication .container a .card .card-desc {
+    width: 65%;
+  }
+  section.publication .container a .card .card-desc h5 {
+    font-size: 18px;
+  }
+  section.publication .container a .card .card-desc h5 span.dots {
+    display: block;
+  }
+  section.publication .container a .card .card-desc h5 span.hide {
+    display: none;
+  }
+}
+@media (max-width: 767.98px) {
+  section.publication .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  section.publication .container a {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+  }
+  section.publication .container a .card {
+    width: 100%;
+  }
+}
 * {
   padding: 0;
   margin: 0;

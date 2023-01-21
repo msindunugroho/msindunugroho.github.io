@@ -364,7 +364,7 @@ footer .container {
 footer .container .footer-spec {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
