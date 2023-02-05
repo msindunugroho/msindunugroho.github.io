@@ -165,7 +165,7 @@ section.services {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  padding: 100px 0px;
+  padding: 100px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
