@@ -96,7 +96,6 @@ section.contact:hover .desc a {
 
 footer {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding: 50px 0;
@@ -114,16 +113,13 @@ footer .container .footer-spec {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   margin-bottom: 60px;
 }
 footer .container .footer-spec div {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding: 0 10px;
@@ -149,10 +145,8 @@ footer .container .footer-spec h5 a {
   color: gold;
 }
 footer .container .container-icon {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   display: flex;
@@ -200,10 +194,8 @@ section.publication .container {
   flex-direction: column;
 }
 section.publication .container .title {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   margin-bottom: 100px;
@@ -234,7 +226,6 @@ section.publication .container a .card {
 }
 section.publication .container a .card .card-img {
   width: 30%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   overflow: hidden;
@@ -296,7 +287,6 @@ section.publication .container a .card:hover img {
   }
   section.publication .container a {
     width: 100%;
-    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
     display: flex;

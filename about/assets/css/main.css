@@ -98,14 +98,12 @@ section.contact:hover .desc a {
 section.about-me {
   padding: 50px 0;
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
 
 section.about-me .container {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   display: flex;
@@ -115,10 +113,8 @@ section.about-me .container {
 
 section.about-me .title {
   margin-bottom: 100px;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   position: relative;
@@ -143,7 +139,6 @@ section.about-me .profile {
 
 section.about-me .profile-img {
   width: 40%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   display: flex;
@@ -163,7 +158,6 @@ section.about-me .profile-img::after {
 
 section.about-me .profile-img img {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
@@ -174,7 +168,6 @@ section.about-me .profile-intro {
   display: flex;
   flex-direction: column;
   width: 35%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   border-left: 3px solid whitesmoke;
@@ -183,7 +176,6 @@ section.about-me .profile-intro {
 
 section.about-me .profile-desc {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   display: flex;
@@ -311,7 +303,6 @@ section.exp {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  max-height: -webkit-max-content;
   max-height: -moz-max-content;
   max-height: max-content;
   padding: 30px 0;
@@ -319,7 +310,6 @@ section.exp {
 
 section.exp .container {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   display: flex;
@@ -331,7 +321,6 @@ section.exp .container {
 
 section.exp .card {
   width: 45%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   background-color: whitesmoke;
@@ -343,7 +332,6 @@ section.exp .card {
 
 section.exp .title {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   text-transform: capitalize;
@@ -361,7 +349,6 @@ section.exp .container-desc {
 
 section.exp .desc-item {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding: 10px;
@@ -381,7 +368,6 @@ section.exp .desc-item:hover {
 section.exp .desc-img {
   box-sizing: border-box;
   width: 10%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   overflow: hidden;
@@ -395,7 +381,6 @@ section.exp .desc-img img {
 
 section.exp .container-desc .desc {
   width: 85%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
@@ -416,7 +401,6 @@ section.exp .desc ul li a:hover {
 /* =================== RESPONSIVE BREAKPOINTS ====================== */
 @media (max-width: 575.98px) {
   section.exp {
-    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
   }
@@ -427,27 +411,26 @@ section.exp .desc ul li a:hover {
     align-items: center;
   }
   section.exp .container .card.edct,
-section.exp .container .card.exp {
+  section.exp .container .card.exp {
     width: 90%;
     margin-bottom: 15px;
     box-sizing: border-box;
   }
   section.exp .container .card.edct .title h2,
-section.exp .container .card.exp .title h2 {
+  section.exp .container .card.exp .title h2 {
     font-size: 20px;
   }
   section.exp .container .card.edct .container-desc .desc-item .desc h4,
-section.exp .container .card.exp .container-desc .desc-item .desc h4 {
+  section.exp .container .card.exp .container-desc .desc-item .desc h4 {
     font-size: 16px;
   }
   section.exp .container .card.edct .container-desc .desc-item .desc ul li,
-section.exp .container .card.exp .container-desc .desc-item .desc ul li {
+  section.exp .container .card.exp .container-desc .desc-item .desc ul li {
     font-size: 14px;
   }
 }
 @media (max-width: 767.98px) {
   section.exp {
-    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
   }
@@ -458,27 +441,26 @@ section.exp .container .card.exp .container-desc .desc-item .desc ul li {
     align-items: center;
   }
   section.exp .container .card.edct,
-section.exp .container .card.exp {
+  section.exp .container .card.exp {
     width: 80%;
     margin-bottom: 15px;
   }
   section.exp .container .card.edct .title h2,
-section.exp .container .card.exp .title h2 {
+  section.exp .container .card.exp .title h2 {
     font-size: 24px;
   }
   section.exp .container .card.edct .container-desc .desc-item .desc h4,
-section.exp .container .card.exp .container-desc .desc-item .desc h4 {
+  section.exp .container .card.exp .container-desc .desc-item .desc h4 {
     font-size: 18px;
   }
   section.exp .container .card.edct .container-desc .desc-item .desc ul li,
-section.exp .container .card.exp .container-desc .desc-item .desc ul li {
+  section.exp .container .card.exp .container-desc .desc-item .desc ul li {
     font-size: 16px;
   }
 }
 section.certification {
   background-color: rgb(32, 32, 32);
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
@@ -490,10 +472,8 @@ section.certification .container {
   flex-direction: column;
 }
 section.certification .container .title {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   margin-bottom: 100px;
@@ -502,7 +482,6 @@ section.certification .container .title {
 }
 section.certification .container .title h1 {
   color: whitesmoke;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   font-weight: 700;
@@ -548,7 +527,6 @@ section.certification .container .card-certification .card-item .card .card-bran
   position: absolute;
   left: 0px;
   top: 7px;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   height: 33px;
@@ -563,7 +541,6 @@ section.certification .container .card-certification .card-item .card .card-bran
   transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 section.certification .container .card-certification .card-item .card .card-brand img {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   height: 100%;
@@ -617,7 +594,6 @@ section.certification .container .card-certification .card-item:hover h6 .bi-arr
 section.achievements {
   background-color: rgb(44, 44, 44);
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
@@ -629,10 +605,8 @@ section.achievements .container {
   align-items: center;
 }
 section.achievements .container .title {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   margin-bottom: 100px;
@@ -641,7 +615,6 @@ section.achievements .container .title {
 }
 section.achievements .container .title h1 {
   color: whitesmoke;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   font-weight: 700;
@@ -658,7 +631,6 @@ section.achievements .container .title::before {
 }
 section.achievements .container .learning-path {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding: 10px;
@@ -668,7 +640,6 @@ section.achievements .container .learning-path {
 }
 section.achievements .container .learning-path .learning-path-title {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
@@ -677,7 +648,6 @@ section.achievements .container .learning-path .learning-path-title h4 {
 }
 section.achievements .container .learning-path .card-container {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   display: flex;
@@ -729,7 +699,7 @@ section.achievements .container .learning-path .card-container .card .card-desc 
   padding: 0;
 }
 section.achievements .container .learning-path .card-container .card .card-desc h5 {
-  color: rgb(56, 38, 219);
+  color: #3826db;
   padding: 0;
 }
 section.achievements .container .learning-path .card-container .card .card-desc p {
@@ -746,7 +716,6 @@ section.achievements .container .learning-path .card-container .card.template-2 
 }
 section.achievements .container .module {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding: 10px;
@@ -756,7 +725,6 @@ section.achievements .container .module {
 }
 section.achievements .container .module .module-title {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
@@ -765,7 +733,6 @@ section.achievements .container .module .module-title h4 {
 }
 section.achievements .container .module .card-container {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   display: flex;
@@ -842,7 +809,6 @@ section.achievements .container .module .card-container .card.template-3 {
 section.contact-me {
   background-color: rgb(44, 44, 44);
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   display: flex;
@@ -852,7 +818,6 @@ section.contact-me .container-card {
   width: 90%;
   border-radius: 0px 10px 0px 0px;
   background-color: rgb(32, 32, 32);
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   display: flex;
@@ -878,7 +843,6 @@ section.contact-me .card-email {
 }
 
 section.contact-me .title {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   display: flex;
@@ -887,7 +851,6 @@ section.contact-me .title {
 
 section.contact-me .card-email .card {
   width: 80%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding: 30px;
@@ -999,7 +962,6 @@ section.contact-me form button {
 }
 footer {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding: 50px 0;
@@ -1017,16 +979,13 @@ footer .container .footer-spec {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   margin-bottom: 60px;
 }
 footer .container .footer-spec div {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding: 0 10px;
@@ -1052,10 +1011,8 @@ footer .container .footer-spec h5 a {
   color: gold;
 }
 footer .container .container-icon {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   display: flex;

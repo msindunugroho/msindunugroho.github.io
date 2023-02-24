@@ -98,7 +98,6 @@ section.contact:hover .desc a {
 section.portfolio {
   background-color: rgb(32, 32, 32);
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   display: flex;
@@ -109,7 +108,6 @@ section.portfolio {
 
 section.portfolio .container {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   display: flex;
@@ -124,10 +122,8 @@ section.portfolio .title {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   margin-bottom: 60px;
@@ -151,7 +147,6 @@ section.portfolio .title::before {
 section.portfolio .card-portfolio {
   align-self: center;
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   display: flex;
@@ -220,7 +215,6 @@ section.portfolio .portfolio-desc p {
 
 footer {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding: 50px 0;
@@ -238,16 +232,13 @@ footer .container .footer-spec {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   margin-bottom: 60px;
 }
 footer .container .footer-spec div {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding: 0 10px;
@@ -273,10 +264,8 @@ footer .container .footer-spec h5 a {
   color: gold;
 }
 footer .container .container-icon {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   display: flex;

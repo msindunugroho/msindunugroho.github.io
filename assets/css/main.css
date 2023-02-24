@@ -96,7 +96,6 @@ section.contact:hover .desc a {
 
 section.intro {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
@@ -107,7 +106,6 @@ section.intro .container {
 }
 section.intro .container .card {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   border: none;
@@ -120,7 +118,6 @@ section.intro .container .card {
 section.intro .container .card .card-img {
   position: relative;
   width: 50%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
@@ -139,7 +136,6 @@ section.intro .container .card .card-img::after {
 section.intro .container .card .card-body {
   height: 100%;
   width: 50%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   display: flex;
@@ -150,7 +146,6 @@ section.intro .container .card .card-body .header,
 section.intro .container .card .card-body .desc,
 section.intro .container .card .card-body .container-btn {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding: 10px 0;
@@ -162,7 +157,6 @@ section.intro .container .card .card-body .container-btn .btn {
 section.services {
   box-sizing: border-box;
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding: 100px 10px;
@@ -180,7 +174,6 @@ section.services {
 section.services .container {
   box-sizing: border-box;
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   display: flex;
@@ -192,10 +185,8 @@ section.services .container {
 }
 
 section.services .container .title {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   align-self: flex-start;
@@ -205,7 +196,6 @@ section.services .container .title {
 section.services .container .title h1 {
   color: whitesmoke;
   text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.644);
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   display: flex;
@@ -214,7 +204,6 @@ section.services .container .title h1 {
 
 section.services .desc-title {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   height: max-content;
@@ -235,7 +224,6 @@ section.services .container-card {
   flex-wrap: wrap;
   width: 100%;
   min-width: 246px;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
@@ -267,10 +255,8 @@ section.services .card p:last-child {
 }
 
 section.services .card p:first-child i {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   font-size: 30px;
@@ -303,7 +289,6 @@ section.services .card p:first-child i.bi-laptop {
 
 section.project {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   /* background-color: antiquewhite; */
@@ -316,10 +301,8 @@ section.project {
 }
 
 section.project .title {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin-bottom: 150px;
@@ -341,7 +324,6 @@ section.project .title::after {
 section.project .row {
   margin-bottom: 100px;
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   display: flex;
@@ -374,7 +356,6 @@ section.project .card {
 
 section.project .card-img {
   width: 65%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   position: relative;
@@ -458,7 +439,6 @@ section.project .card-desc .container-author {
   align-items: flex-start;
   justify-content: start;
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   margin-top: 50px;
@@ -475,7 +455,6 @@ section.project .card-desc .author {
 }
 
 section.project .card-desc .author-img {
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   width: 20%;
@@ -504,7 +483,6 @@ section.project .author-profile .h5, p {
 
 footer {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding: 50px 0;
@@ -522,16 +500,13 @@ footer .container .footer-spec {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   margin-bottom: 60px;
 }
 footer .container .footer-spec div {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding: 0 10px;
@@ -557,10 +532,8 @@ footer .container .footer-spec h5 a {
   color: gold;
 }
 footer .container .container-icon {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   display: flex;
@@ -596,14 +569,11 @@ footer .container .desc p {
     padding: 0 10px 15px 0;
   }
 }
-* {
+body {
+  background-color: rgb(32, 32, 32);
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-body {
-  background-color: rgb(32, 32, 32);
 }
 
 span.certified {
@@ -652,7 +622,6 @@ span.certified {
 /* =================== RESPONSIVE BREAKPOINTS ====================== */
 @media (max-width: 575.98px) {
   section.intro {
-    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
   }
@@ -674,7 +643,6 @@ span.certified {
   }
   section.intro .container .card .card-body {
     width: 100%;
-    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
   }
@@ -750,7 +718,6 @@ span.certified {
     margin-top: 20px;
   }
   section.project .row .card .card-desc .container-author .author {
-    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
     flex-direction: column;
@@ -780,7 +747,6 @@ span.certified {
 }
 @media (max-width: 767.98px) {
   section.intro {
-    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
   }
@@ -834,7 +800,6 @@ span.certified {
     margin-top: 20px;
   }
   section.project .row .card .card-desc .container-author .author {
-    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
     flex-direction: column;
