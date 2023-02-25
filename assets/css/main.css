@@ -291,16 +291,18 @@ section.project {
   width: 100%;
   height: -moz-max-content;
   height: max-content;
-  /* background-color: antiquewhite; */
-  padding: 100px 0;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  padding: 100px 10px;
 }
-
-section.project .title {
+section.project .container {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section.project .container .title {
   width: -moz-fit-content;
   width: fit-content;
   height: -moz-fit-content;
@@ -309,8 +311,7 @@ section.project .title {
   color: whitesmoke;
   position: relative;
 }
-
-section.project .title::after {
+section.project .container .title::after {
   content: "";
   width: 50%;
   height: 100%;
@@ -320,165 +321,108 @@ section.project .title::after {
   /* background-color: #ffd700; */
   border-bottom: 3px solid gold;
 }
-
-section.project .row {
-  margin-bottom: 100px;
+section.project .container .project-content {
   width: 100%;
-  height: -moz-max-content;
-  height: max-content;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
-
-section.project .row.row-start {
-  align-items: flex-start;
-}
-
-section.project .row.row-end {
-  align-items: flex-end;
-}
-
-section.project .row.row-center {
-  align-items: center;
-}
-
-section.project .card {
-  width: 80%;
-  margin-bottom: 100px;
+section.project .container .project-content .card-video {
+  width: 100%;
+  height: 100%;
+  padding: 40px 0;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
-  border: none;
-  border-radius: 0;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-section.project .card-img {
-  width: 65%;
-  height: -moz-max-content;
-  height: max-content;
-  position: relative;
-}
-
-section.project .row.row-end .card-img::before {
-  content: "";
-  background-color: #e0bf00;
-  position: absolute;
-  width: 120%;
-  height: 110%;
-  right: 0;
-  bottom: 0;
-  z-index: -5;
-}
-
-section.project .row.row-start .card-img::before {
-  content: "";
-  background-color: #e0bf00;
-  position: absolute;
-  width: 120%;
-  height: 110%;
-  left: 0;
-  top: 0;
-  z-index: -5;
-}
-
-section.project .row.row-center .card-img::before {
-  content: "";
-  background-color: #e0bf00;
-  position: absolute;
-  width: 120%;
-  height: 110%;
-  top: 0;
-  right: -10%;
-  left: -10%;
-  z-index: -5;
-}
-
-section.project .card-img img {
-  width: 100%;
-  background-size: cover;
-}
-
-section.project .row.row-end .card-img img {
-  border-radius: 5px 0 0 0;
-  box-shadow: 2px 2px 5px 3px rgb(32, 32, 32);
-}
-
-section.project .row.row-start .card-img img {
-  border-radius: 0 0 5px 0;
-  box-shadow: -2px -2px 5px 3px rgb(32, 32, 32);
-}
-
-section.project .row.row-center .card-img img {
-  border-radius: 0 0 5px 5px;
-  box-shadow: 0px 0px 5px 0px rgb(32, 32, 32);
-}
-
-section.project .card-desc {
-  width: 35%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
   color: whitesmoke;
-  padding: 10px;
 }
-
-section.project .card-desc .tools-img {
-  width: 100%;
-  height: 50px;
-  margin-top: 40px;
-}
-
-section.project .card-desc img {
-  height: 100%;
-}
-
-section.project .card-desc .container-author {
-  display: flex;
-  align-items: flex-start;
-  justify-content: start;
-  width: 100%;
+section.project .container .project-content .card-video .video-container {
+  width: 45%;
+  background-color: aliceblue;
   height: -moz-max-content;
   height: max-content;
-  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+section.project .container .project-content .card-video .video-container iframe {
+  width: 100%;
+}
+section.project .container .project-content .card-video .desc-container {
+  width: 45%;
+  height: 100%;
+  display: flex;
   flex-direction: column;
 }
-
-section.project .card-desc .author {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: start;
-  width: 100%;
-  height: 100px;
+section.project .container .project-content .card-video .desc-container p {
+  margin: 0;
 }
-
-section.project .card-desc .author-img {
+section.project .container .project-content .card-video .desc-container .title-project {
+  font-size: 23px;
+  color: gold;
+  font-weight: 600;
+}
+section.project .container .project-content .card-video .desc-container .desc-project {
+  margin-bottom: 15px;
+}
+section.project .container .project-content .card-video .desc-container .author-container {
+  width: 100%;
   height: -moz-max-content;
   height: max-content;
-  width: 20%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+section.project .container .project-content .card-video .desc-container .author-container .author {
+  width: -moz-max-content;
+  width: max-content;
+  height: 45px;
+  padding: 7px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+section.project .container .project-content .card-video .desc-container .author-container .author img {
+  width: 34px;
+  height: auto;
   border-radius: 100%;
-  overflow: hidden;
+  background-color: gold;
 }
-
-section.project .card-desc .author-img img {
-  width: 100%;
-  background-position: center;
-  background-size: cover;
+section.project .container .project-content .card-video .desc-container .author-container .author p {
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+  padding-left: 7px;
+  margin: 0;
 }
-
-section.project .card-desc .author-profile {
-  width: 80%;
-  padding: 0 15px;
+section.project .container .project-content .card-video .desc-container .tools-project {
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
   display: flex;
-  color: whitesmoke;
   flex-direction: column;
 }
-
-section.project .author-profile .h5, p {
-  margin: 0px;
-  font-weight: 500;
+section.project .container .project-content .card-video .desc-container .tools-project .tools {
+  width: -moz-max-content;
+  width: max-content;
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+section.project .container .project-content .card-video .desc-container .tools-project .tools img {
+  width: 37px;
+  margin: 0 5px;
+}
+section.project .container .project-content .card-video .desc-container .btn {
+  width: -moz-max-content;
+  width: max-content;
+  margin: 20px 0 0 0;
+  border-radius: 0;
+  font-size: 14px;
 }
 
 footer {
