@@ -43,7 +43,6 @@ section.project {
         padding: 40px 0;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
         color: whitesmoke;
 
@@ -61,13 +60,15 @@ section.project {
         }
 
         .desc-container {
-          width: 45%;
+          width: max-content;
           height: 100%;
+          padding-left: 45px;
           display: flex;
           flex-direction: column;
 
           p {
             margin: 0;
+            width: 100%;
           }
 
 
@@ -154,7 +155,6 @@ section.project {
         padding: 40px 0;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
         color: whitesmoke;
 
@@ -173,8 +173,9 @@ section.project {
         }
         
         .desc-container {
-          width: 45%;
+          width: max-content;
           height: 100%;
+          padding-left: 45px;
           display: flex;
           flex-direction: column;
 
@@ -263,6 +264,54 @@ section.project {
       // row-reverse
       .row-reverse {
         flex-direction: row-reverse;
+
+        .desc-container {
+          width: max-content;
+          height: 100%;
+          padding-right: 45px;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  section.project {
+    padding: 60px 10px;
+
+    .container {
+      .title {
+        font-size: 27px;
+      }
+      .project-content {
+        .card-video {
+          flex-direction: column;
+
+          .video-container {
+            width: 95%;
+          }
+          .desc-container {
+            width: 80%;
+            padding: 0;
+          }
+        }
+        .card-img {
+          flex-direction: column;
+
+          .img-container {
+            width: 80%;
+          }
+          .desc-container {
+            width: 95%;
+            padding: 0;
+          }
+        }
       }
     }
   }
