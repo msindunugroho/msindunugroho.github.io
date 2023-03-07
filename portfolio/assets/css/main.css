@@ -114,7 +114,7 @@ section.portfolio .container {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 100px 0;
+  padding: 100px 10px;
 }
 section.portfolio .container .title {
   display: flex;
@@ -345,6 +345,19 @@ section.portfolio .container .project-content .card-img .desc-container .btn {
   font-size: 14px;
 }
 
+@media (max-width: 575.98px) {
+  section.portfolio .container .project-content {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  section.portfolio .container .project-content .card-video {
+    width: 100%;
+  }
+  section.portfolio .container .project-content .card-img {
+    width: 100%;
+  }
+}
 footer {
   width: 100%;
   height: -moz-max-content;
