@@ -32,11 +32,11 @@ section.project {
 
     .project-content {
       width: 100%;
-      height: auto;
+      height: max-content;
       display: flex;
       flex-direction: column;
 
-      // card vdideo
+      // card vdieo
       .card-video{
         width: 100%;
         height: 100%;
@@ -105,7 +105,6 @@ section.project {
                 width: 34px;
                 height: auto;
                 border-radius: 100%;
-                background-color: gold;
               }
 
               p {
@@ -217,7 +216,6 @@ section.project {
                 width: 34px;
                 height: auto;
                 border-radius: 100%;
-                background-color: gold;
               }
 
               p {
@@ -278,7 +276,54 @@ section.project {
 }
 
 // `sm` applies to x-small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+  section.project {
+    padding: 60px 10px;
+
+    .container {
+      // background-color: blue;
+      .title {
+        font-size: 27px;
+      }
+      .project-content {
+        padding: 10px;
+        align-items: flex-start;
+        .card-video {
+          flex-direction: column;
+          align-items:flex-start;
+
+          .video-container {
+            width: 100%;
+          }
+          .desc-container {
+            width: max-content;
+          }
+        }
+        .card-img {
+
+          flex-direction: column;
+          justify-content: flex-start;
+
+          .img-container {
+            width: 100%;
+            height: max-content;
+            img {
+              width: 100%;
+            }
+          }
+          .desc-container {
+            width: max-content;
+            padding: 0;
+          }
+        }
+
+        .row-reverse {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
 
 // `md` applies to small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
