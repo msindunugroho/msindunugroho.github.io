@@ -323,217 +323,106 @@ section.project .container .title::after {
 }
 section.project .container .project-content {
   width: 100%;
-  height: -moz-max-content;
-  height: max-content;
-  display: flex;
-  flex-direction: column;
-}
-section.project .container .project-content .card-video {
-  width: 100%;
-  height: 100%;
-  padding: 40px 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: whitesmoke;
-}
-section.project .container .project-content .card-video .video-container {
-  width: 45%;
-  background-color: aliceblue;
-  height: -moz-max-content;
-  height: max-content;
-  display: flex;
-  align-items: center;
-}
-section.project .container .project-content .card-video .video-container iframe {
-  width: 100%;
-}
-section.project .container .project-content .card-video .desc-container {
-  width: -moz-max-content;
-  width: max-content;
-  height: 100%;
-  padding-left: 45px;
-  display: flex;
-  flex-direction: column;
-}
-section.project .container .project-content .card-video .desc-container p {
-  margin: 0;
-  width: 100%;
-}
-section.project .container .project-content .card-video .desc-container .title-project {
-  font-size: 23px;
-  color: gold;
-  font-weight: 600;
-}
-section.project .container .project-content .card-video .desc-container .desc-project {
-  margin-bottom: 15px;
-}
-section.project .container .project-content .card-video .desc-container .author-container {
-  width: 100%;
-  height: -moz-max-content;
-  height: max-content;
+  height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 10px;
-}
-section.project .container .project-content .card-video .desc-container .author-container .author {
-  width: -moz-max-content;
-  width: max-content;
-  height: 45px;
-  padding: 7px;
-  margin-right: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
 }
-section.project .container .project-content .card-video .desc-container .author-container .author img {
-  width: 34px;
-  height: auto;
-  border-radius: 100%;
-}
-section.project .container .project-content .card-video .desc-container .author-container .author p {
-  width: -moz-max-content;
-  width: max-content;
-  height: 100%;
-  padding-left: 7px;
-  margin: 0;
-}
-section.project .container .project-content .card-video .desc-container .tools-project {
-  width: -moz-max-content;
-  width: max-content;
+section.project .container .project-content .card {
+  width: 500px;
   height: -moz-max-content;
   height: max-content;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
   display: flex;
   flex-direction: column;
+  margin-top: 60px;
 }
-section.project .container .project-content .card-video .desc-container .tools-project .tools {
-  width: -moz-max-content;
-  width: max-content;
-  height: 45px;
-  display: flex;
-  align-items: center;
-}
-section.project .container .project-content .card-video .desc-container .tools-project .tools img {
-  width: 37px;
-  margin: 0 5px;
-}
-section.project .container .project-content .card-video .desc-container .btn {
-  width: -moz-max-content;
-  width: max-content;
-  margin: 20px 0 0 0;
-  border-radius: 0;
-  font-size: 14px;
-}
-section.project .container .project-content .card-img {
+section.project .container .project-content .card .card-content {
   width: 100%;
-  height: 100%;
-  padding: 40px 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: whitesmoke;
 }
-section.project .container .project-content .card-img .img-container {
-  width: 45%;
-  background-color: aliceblue;
-  height: -moz-max-content;
-  height: max-content;
-  display: flex;
-  align-items: center;
-}
-section.project .container .project-content .card-img .img-container img {
+section.project .container .project-content .card .card-content iframe, section.project .container .project-content .card .card-content img {
   width: 100%;
-  height: 100%;
+  height: 282px;
 }
-section.project .container .project-content .card-img .desc-container {
-  width: -moz-max-content;
-  width: max-content;
-  height: 100%;
-  padding-left: 45px;
-  display: flex;
-  flex-direction: column;
-}
-section.project .container .project-content .card-img .desc-container p {
+section.project .container .project-content .card .card-desc p {
   margin: 0;
+  color: white;
+  font-size: 500;
 }
-section.project .container .project-content .card-img .desc-container .title-project {
-  font-size: 23px;
+section.project .container .project-content .card .card-desc .card-desc-title {
   color: gold;
+  font-size: 28px;
   font-weight: 600;
+  text-transform: capitalize;
 }
-section.project .container .project-content .card-img .desc-container .desc-project {
-  margin-bottom: 15px;
+section.project .container .project-content .card .card-desc .description {
+  text-transform: capitalize;
 }
-section.project .container .project-content .card-img .desc-container .author-container {
+section.project .container .project-content .card .card-desc .developer-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 10px;
+}
+section.project .container .project-content .card .card-desc .developer-container .gold-text {
+  color: gold;
+}
+section.project .container .project-content .card .card-desc .developer-container .container-profile {
+  margin-top: 7px;
+  height: 40px;
+}
+section.project .container .project-content .card .card-desc .developer-container .container-profile .developer {
+  height: 100%;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+}
+section.project .container .project-content .card .card-desc .developer-container .container-profile .developer .developer-img {
+  height: 100%;
+  border-radius: 100%;
+  background-color: gold;
+  overflow: hidden;
+  margin-right: 8px;
+}
+section.project .container .project-content .card .card-desc .developer-container .container-profile .developer .developer-img img {
+  height: 100%;
+}
+section.project .container .project-content .card .card-desc .developer-container .container-profile .developer .developer-name {
+  height: 100%;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.project .container .project-content .card .card-desc .tools-container {
   width: 100%;
   height: -moz-max-content;
   height: max-content;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-}
-section.project .container .project-content .card-img .desc-container .author-container .author {
-  width: -moz-max-content;
-  width: max-content;
-  height: 45px;
-  padding: 7px;
-  margin-right: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-section.project .container .project-content .card-img .desc-container .author-container .author img {
-  width: 34px;
-  height: auto;
-  border-radius: 100%;
-}
-section.project .container .project-content .card-img .desc-container .author-container .author p {
-  width: -moz-max-content;
-  width: max-content;
-  height: 100%;
-  padding-left: 7px;
-  margin: 0;
-}
-section.project .container .project-content .card-img .desc-container .tools-project {
-  width: -moz-max-content;
-  width: max-content;
-  height: -moz-max-content;
-  height: max-content;
-  display: flex;
   flex-direction: column;
+  margin-top: 10px;
 }
-section.project .container .project-content .card-img .desc-container .tools-project .tools {
-  width: -moz-max-content;
-  width: max-content;
-  height: 45px;
-  display: flex;
-  align-items: center;
+section.project .container .project-content .card .card-desc .tools-container .gold-text {
+  color: gold;
 }
-section.project .container .project-content .card-img .desc-container .tools-project .tools img {
-  width: 37px;
-  margin: 0 5px;
+section.project .container .project-content .card .card-desc .tools-container .tools-icon {
+  height: 40px;
+  width: 100%;
 }
-section.project .container .project-content .card-img .desc-container .btn {
-  width: -moz-max-content;
-  width: max-content;
-  margin: 20px 0 0 0;
+section.project .container .project-content .card .card-desc .tools-container .tools-icon img {
+  height: 100%;
+  margin-right: 3px;
+}
+section.project .container .project-content .card .card-desc a {
   border-radius: 0;
-  font-size: 14px;
-}
-section.project .container .project-content .row-reverse {
-  flex-direction: row-reverse;
-}
-section.project .container .project-content .row-reverse .desc-container {
-  width: -moz-max-content;
-  width: max-content;
-  height: 100%;
-  padding-right: 45px;
-  display: flex;
-  flex-direction: column;
+  margin-top: 15px;
 }
 
 @media (max-width: 575.98px) {
@@ -544,67 +433,31 @@ section.project .container .project-content .row-reverse .desc-container {
     font-size: 27px;
   }
   section.project .container .project-content {
-    padding: 10px;
-    align-items: flex-start;
-  }
-  section.project .container .project-content .card-video {
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    align-items: flex-start;
   }
-  section.project .container .project-content .card-video .video-container {
+  section.project .container .project-content .card {
+    width: 300px;
+  }
+  section.project .container .project-content .card .card-content iframe, section.project .container .project-content .card .card-content img {
     width: 100%;
+    height: 169px;
   }
-  section.project .container .project-content .card-video .desc-container {
-    width: -moz-max-content;
-    width: max-content;
+  section.project .container .project-content .card .card-desc p {
+    font-size: 15px;
   }
-  section.project .container .project-content .card-img {
-    flex-direction: column;
-    justify-content: flex-start;
+  section.project .container .project-content .card .card-desc .card-desc-title {
+    font-size: 20px;
   }
-  section.project .container .project-content .card-img .img-container {
-    width: 100%;
-    height: -moz-max-content;
-    height: max-content;
+  section.project .container .project-content .card .card-desc .developer-container .container-profile {
+    height: 30px;
   }
-  section.project .container .project-content .card-img .img-container img {
-    width: 100%;
+  section.project .container .project-content .card .card-desc .tools-container .tools-icon {
+    height: 30px;
   }
-  section.project .container .project-content .card-img .desc-container {
-    width: -moz-max-content;
-    width: max-content;
-    padding: 0;
-  }
-  section.project .container .project-content .row-reverse {
-    flex-direction: column;
-  }
-}
-@media (max-width: 767.98px) {
-  section.project {
-    padding: 60px 10px;
-  }
-  section.project .container .title {
-    font-size: 27px;
-  }
-  section.project .container .project-content .card-video {
-    flex-direction: column;
-  }
-  section.project .container .project-content .card-video .video-container {
-    width: 95%;
-  }
-  section.project .container .project-content .card-video .desc-container {
-    width: 80%;
-    padding: 0;
-  }
-  section.project .container .project-content .card-img {
-    flex-direction: column;
-  }
-  section.project .container .project-content .card-img .img-container {
-    width: 80%;
-  }
-  section.project .container .project-content .card-img .desc-container {
-    width: 95%;
-    padding: 0;
+  section.project .container .project-content .card .card-desc a {
+    font-size: 16px;
   }
 }
 footer {
