@@ -1,0 +1,23 @@
+/* import components */
+@import url('./components/main.css');
+@import url('./components/header.css');
+@import url('./components/navigation.css');
+
+:root {
+  /* color */
+  --grey: #555;
+  --darker-grey: #333;
+  --blue: #61DAFB;
+  --darker-blue: #61aabe;
+  --white:#fff;
+  --white:#cccccc;
+  --ff-montserrat: "Montserrat", sans-serif;
+}
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--darker-grey);
+}
