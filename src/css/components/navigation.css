@@ -1,0 +1,56 @@
+nav {
+    position: sticky;
+    top: 0;
+    background: var(--grey);
+    padding: 0 8vw;
+}
+nav .nav_container {
+    display: flex;
+    place-content: center space-between;
+    flex-flow: column nowrap;
+}
+/* nav_header */
+nav .nav_header {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .nav_name h1{
+    color: var(--blue);
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+nav .nav_name h1 span {
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: var(--white);
+}
+nav .menu_toggle span {
+    color: var(--blue);
+    font-size: 2.4rem;
+}
+nav .nav_bar {
+    height: 0px;
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 0 2vw;
+}
+nav .show_nav-bar {
+    height: auto;
+}
+nav .nav_bar a {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    display: inline-block;
+    text-decoration: none;
+    padding: 2rem 1rem;
+    color: var(--white);
+}
+
+@media screen and (min-width: 768px)  {
+    
+}
