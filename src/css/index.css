@@ -10,8 +10,11 @@
   --blue: #61DAFB;
   --darker-blue: #61aabe;
   --white:#fff;
-  --white:#cccccc;
+  --darker-white:#cccccc;
+  /* font family */
   --ff-montserrat: "Montserrat", sans-serif;
+  /* transition */
+  --transition-1: .3s ease-out;
 }
 *, *:before, *:after {
   padding: 0;
@@ -20,4 +23,6 @@
 }
 body {
   background: var(--darker-grey);
+  font-family: var(--ff-montserrat);
+  letter-spacing: 1.9px;
 }
