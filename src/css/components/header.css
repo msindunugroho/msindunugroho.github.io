@@ -20,25 +20,33 @@ header#carousel .carousel_desc {
     justify-content: center;
     align-items: center;
     gap: 1.2vw;
-    font-size: 3vw;
     color: var(--white);
 }
+header#carousel .carousel_desc p {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    align-self: flex-start;
+    text-align: start;
+    font-size: 4vw;
+}
 header#carousel .carousel_desc .list_name {
-    height: 4.5vw;
+    /* outline: 1px solid blue; */
+    height: 8.6vw;
     text-align: center;
     box-shadow: inset 0px 0px 20px rgb(51, 51, 51);
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: .7vw;
+    gap: 1.4vw;
 }
 header#carousel .carousel_desc .list_name span.name_item {
     display: block;
+    /* outline: 1px solid red; */
     z-index: -1;
     text-transform: capitalize;
     /* border: 1px solid red; */
     font-weight: 500;
-    font-size: 3.5vw;
+    font-size: 7vw;
     animation: transform_words 8s ease-out infinite;
     /* transform: translateY(-342%); */
 }
@@ -58,19 +66,19 @@ header#carousel .carousel_desc .list_name span.name_item span {
 }
 header#carousel .carousel_desc .social_media {
     display: flex;
-    gap: 1.5vw;
+    gap: 3vw;
 }
 header#carousel .carousel_desc .social_media a {
     color: var(--darker-white);
-    width: 2.4vw;
-    height: 2.4vw;
+    width: 4vw;
+    height: 4vw;
 }
 header#carousel .carousel_desc .social_media a:hover {
     color: var(--blue);
 }
 header#carousel .carousel_desc a.button {
     width: fit-content;
-    font-size: 1.7vw;
+    font-size: 3vw;
     color: var(--blue);
     text-decoration: none;
     margin: 15px 0;
@@ -82,6 +90,7 @@ header#carousel .carousel_desc a.button {
 header#carousel .carousel_desc a.button:hover {
     background: var(--blue);
     color: var(--darker-grey);
+    outline: .3vw solid var(--white);
 }
 
 
@@ -103,6 +112,36 @@ header#carousel .carousel_image {
         align-items: flex-start;
     }
     header#carousel .carousel_desc .list_name {
+        height: 4.5vw;
         text-align: start;
+        box-shadow: inset 0px 0px 20px rgb(51, 51, 51);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: .7vw;
+    }
+    header#carousel .carousel_desc .list_name span.name_item {
+        display: block;
+        z-index: -1;
+        text-transform: capitalize;
+        /* border: 1px solid red; */
+        font-weight: 500;
+        font-size: 3.5vw;
+        animation: transform_words 8s ease-out infinite;
+        /* transform: translateY(-342%); */
+    }
+    header#carousel .carousel_desc .list_name span.name_item span {
+        font-weight:lighter;
+        color: var(--blue);
+    }
+    /* transform_words animation */
+    @keyframes transform_words {
+        0% {transform: translateY(0%);}
+        10% {transform: translateY(0%);}
+        30% {transform: translateY(-114%);}
+        45% {transform: translateY(-114%);}
+        60% {transform: translateY(-228%);}
+        82% {transform: translateY(-228%);}
+        100% {transform: translateY(-349%);}
     }
 }
