@@ -111,6 +111,10 @@ header#carousel .carousel_image {
     header#carousel .carousel_desc {
         align-items: flex-start;
     }
+    header#carousel .carousel_desc p {
+        font-size: 2.5vw;
+        margin: unset;
+    }
     header#carousel .carousel_desc .list_name {
         height: 4.5vw;
         text-align: start;
