@@ -134,14 +134,16 @@ header#carousel .carousel_image {
         font-weight:lighter;
         color: var(--blue);
     }
-    /* transform_words animation */
-    @keyframes transform_words {
-        0% {transform: translateY(0%);}
-        10% {transform: translateY(0%);}
-        30% {transform: translateY(-114%);}
-        45% {transform: translateY(-114%);}
-        60% {transform: translateY(-228%);}
-        82% {transform: translateY(-228%);}
-        100% {transform: translateY(-349%);}
+    /* social media */
+    header#carousel .carousel_desc .social_media {
+        gap: 1.5vw;
+    }
+    header#carousel .carousel_desc .social_media a {
+        width: 2vw;
+        height: 2vw;
+    }
+    header#carousel .carousel_desc a.button {
+        font-size: 1.5vw;
+        padding: 1vw 1.5vw;
     }
 }
