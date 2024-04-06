@@ -2,15 +2,16 @@
 @import url('./components/main.css');
 @import url('./components/header.css');
 @import url('./components/navigation.css');
+@import url('./components/about.css');
 
 :root {
   /* color */
-  --grey: #555;
-  --darker-grey: #333;
+  --grey: rgb(63, 63, 63);
+  --darker-grey: #222;
   --blue: #61DAFB;
   --darker-blue: #61aabe;
   --white:#fff;
-  --darker-white:#cccccc;
+  --darker-white:#b6b6b6;
   /* font family */
   --ff-montserrat: "Montserrat", sans-serif;
   /* transition */

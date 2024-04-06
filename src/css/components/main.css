@@ -4,6 +4,7 @@ main {
   flex-flow: column nowrap;
 }
 main header#carousel, 
-main nav {
-  padding: 0 5vw;
+main nav,
+main section {
+  padding: 0 8vw;
 }
