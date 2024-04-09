@@ -14,7 +14,9 @@ section#about .about_title {
   align-items: center;
   align-self: flex-start;
   gap: 1vw;
-  font-size: 4vw;
+}
+section#about .about_title p {
+  font-size: var(--fs-title-mobile);
   text-transform: capitalize;
 }
 section#about .about_title svg {
@@ -46,7 +48,7 @@ section#about .about_sub-title {
  margin: 3px 0;
  align-self: flex-start;
  list-style: none;
- font-size: 2vw;
+ font-size: .6rem;
  display:flex;
  flex-flow: row wrap;
  gap: 1.5vw;
@@ -67,10 +69,10 @@ section#about img {
 }
 section#about .about_desc {
   order: 4;
-  margin: 20px 0;
+  margin: .9rem 0;
   text-align: center;
   line-height: 25px;
-  font-size: 1rem;
+  font-size: var(--fs-paragraph-mobile);
 }
 
 @keyframes blink_cursor {
@@ -83,75 +85,17 @@ section#about .about_desc {
     left: calc(100% - 5px);
   }
 }
-@media screen and (min-width: 768px) {
-  section#about .about_container {
-    position: relative;
-    padding: 25vh 0;
-    justify-content: flex-start;
-    gap: 3rem;
+@media screen and (min-width: 425px) {
+  section#about .about_title p {
+    font-size: var(--fs-title-tablet);
   }
-  section#about .about_title {
-    position: absolute;
-    left: 0;
-    top: 100px;
-  }
-  section#about .about_title svg {
-    color: var(--white);
-    height: 2.5rem;
-    width: auto;
-  }
-  section#about .about_name {
-    padding-right: 5px;
-    overflow: hidden;
-    display: inline-block;
-    position: relative;
-    color: var(--blue);
-  }
-  section#about .about_name::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    /* right: 0; */
-    left: 0;
-    top: 0;
-    bottom: 0;
-    background: var(--darker-grey);
-    border-left: 5px solid;
-    animation: blink_cursor 0.8s linear infinite,
-      typing_words 2.5s steps(18) forwards;
-  }
-
   section#about .about_sub-title {
-    position: absolute;
-    right: 0;
-    top: 40%;
-    flex-direction: column;
-    gap: 25px;
-    /* color: var(--white); */
-    font-size: 1.2rem;
-    margin: 10px 0 25px 0;
+    font-size: .7rem;
   }
-  section#about .about_sub-title li::before {
-    content: "";
-    width: 1vw;
-    height: 1vw;
-    border-radius: 50%;
-    background: var(--darker-blue);
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+  section#about .about_desc {
+    font-size: var(--fs-paragraph-tablet);
   }
-  section#about .about_sub-title li {
-    position: relative;
-    width: fit-content;
-    font-size: 1.5vw;
-    padding: 1vw 1.5vw 1vw 3vw;
-    border-radius: 25px;
-  }
-  section#about img {
-    width: 30vw;
-    height: auto;
-  }
+}
+@media screen and (min-width: 768px) {
+/* buat lagi!!!!! semangat yok */
 }

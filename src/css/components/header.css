@@ -148,7 +148,7 @@ header#carousel .carousel_image img {
         z-index: -1;
         text-transform: capitalize;
         font-weight: 500;
-        font-size: 4vw;
+        font-size: 3.7vw;
     }
     @keyframes transform_words {
         0% {transform: translateY(0%);}

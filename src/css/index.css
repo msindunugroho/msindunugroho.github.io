@@ -15,9 +15,13 @@
   /* font family */
   --ff-montserrat: "Montserrat", sans-serif;
   /* font-size */
+  /* title */
   --fs-title-mobile: 1rem;
   --fs-title-tablet: 1.3rem;
   --fs-title-laptop: 3.5vw;
+  /* paragreaph */
+  --fs-paragraph-mobile: .8rem;
+  --fs-paragraph-tablet: 1rem;
   /* transition */
   --transition-1: .3s ease-out;
 }
