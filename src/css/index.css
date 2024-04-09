@@ -14,6 +14,10 @@
   --darker-white:#b6b6b6;
   /* font family */
   --ff-montserrat: "Montserrat", sans-serif;
+  /* font-size */
+  --fs-title-mobile: 1rem;
+  --fs-title-tablet: 1.3rem;
+  --fs-title-laptop: 3.5vw;
   /* transition */
   --transition-1: .3s ease-out;
 }
