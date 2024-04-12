@@ -99,9 +99,49 @@ header#carousel .carousel_image {
     margin: 1rem 0;
     flex: 1;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
-header#carousel .carousel_image img {
+header#carousel .carousel_image .carousel_image-wrapper {
+    width: 50%;
+    height: auto;
+    overflow: visible;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header#carousel .carousel_image .carousel_image-wrapper::before {
+    content: "";
+    z-index: -1;
+    width: 85vw;
+    height: 85vw;
+    background-color: var(--blue);
+    position: absolute;
+    border-radius: 46% 54% 56% 44% / 59% 68% 32% 41%;
+    animation: bable 10s linear infinite alternate;
+}
+@keyframes bable {
+    0% {border-radius: 46% 54% 56% 44% / 59% 68% 32% 41% ;}
+    25% {border-radius: 55% 45% 43% 57% / 48% 63% 37% 52%;}
+    50% {border-radius:49% 51% 55% 45% / 53% 66% 34% 47%  ;}
+    75% {border-radius: 40% 60% 48% 52% / 62% 46% 54% 38% ;}
+    1000% {border-radius: 35% 65% 57% 43% / 41% 52% 48% 59% ;}
+}
+header#carousel .carousel_image .carousel_image-wrapper::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        to top ,
+        var(--blue),
+        #61dafb1f,
+        #61dafb00);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+header#carousel .carousel_image .carousel_image-wrapper img {
     width: 100%;
 }
 @media screen and (min-width: 425px) {
@@ -125,6 +165,13 @@ header#carousel .carousel_image img {
         60% {transform: translateY(-270%);}
         82% {transform: translateY(-270%);}
         100% {transform: translateY(-410%);}
+    }
+    header#carousel .carousel_image .carousel_image-wrapper::before {
+        width: 26rem;
+        height: 26rem;
+    }
+    header#carousel .carousel_image .carousel_image-wrapper img {
+        width: 168px;
     }
 }
 @media screen and (min-width: 768px) {
@@ -180,5 +227,19 @@ header#carousel .carousel_image img {
     header#carousel .carousel_desc a.button {
         font-size: 1.5vw;
         padding: 1vw 1.5vw;
+    }
+    header#carousel .carousel_image {
+        justify-content: flex-end;
+    }
+    header#carousel .carousel_image .carousel_image-wrapper {
+        width: 70%;
+    }
+    header#carousel .carousel_image .carousel_image-wrapper::before {
+        width: 33rem;
+        height: 33rem;
+        outline: 5px solid var(--grey);
+    }
+    header#carousel .carousel_image .carousel_image-wrapper img {
+        width: 250px;
     }
 }
