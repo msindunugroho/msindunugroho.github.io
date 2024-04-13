@@ -101,6 +101,7 @@ header#carousel .carousel_image {
     display: flex;
     justify-content: center;
     align-items: center;
+    outline: .5px solid red;
 }
 header#carousel .carousel_image .carousel_image-wrapper {
     width: 50%;
